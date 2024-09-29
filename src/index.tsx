@@ -22,7 +22,7 @@ const router = createBrowserRouter([
 		children: [{
 			index: true,
 			path: "/",
-			element: <Navigate to="/portfolio/myself" replace />
+			element: <Navigate to="/myself" replace />
 		}, {
 			path: "myself",
 			element: <Myself />
@@ -43,7 +43,9 @@ const router = createBrowserRouter([
 			element: <Resume />
 		}]
 	}
-])
+], {
+	basename: '/portfolio'
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
