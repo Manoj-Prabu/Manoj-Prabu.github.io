@@ -9,7 +9,7 @@ import {
 	Navigate
 } from "react-router-dom";
 import Knowledge from './components/Knowledge';
-import Experience from './components/Experience';
+// import Experience from './components/Experience';
 import Myself from './components/myself/Myself';
 import Project from './components/projects/Project';
 import Achievements from './components/achievements/Achievements';
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
 		children: [{
 			index: true,
 			path: "/",
-			element: <Navigate to="/myself" replace />
+			element: <Navigate to="/portfolio/myself" replace />
 		}, {
 			path: "myself",
 			element: <Myself />
